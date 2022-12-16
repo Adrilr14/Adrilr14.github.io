@@ -6,6 +6,45 @@
 */
 
 /*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+:root {
+  /*--------------------------------------------------------------
+  ## Blue Color
+  --------------------------------------------------------------*/
+  /*--generalColor: #149ddd;
+  --titlesColor: #173b6c;
+  --sectionsBackgroundColor: #f5f8fd;
+  --progressBarColor: #dce8f8;
+  --backgroundYearsColor: #e4edf9;
+  --quotationMarksTestimonialsColor: #c3e8fa;
+  --contactIconsColor: #dff3fc;
+  --secondColor: #37b3ed;
+  --thirdColor:#122f57;
+  --fourthColor:#1f5297;
+  --portfolioLinkColor:rgba(20, 157, 221, 0.75);
+  --portfolioLinkHoverColor:rgba(20, 157, 221, 0.95);
+  --backToTheTopHover: #2eafec;*/
+
+  /*--------------------------------------------------------------
+  ## Red Color
+  --------------------------------------------------------------*/
+  --generalColor: #e64533;
+  --titlesColor: #6c1717;
+  --sectionsBackgroundColor: #fdf5f5;
+  --progressBarColor: #f8dcdc;
+  --backgroundYearsColor: #f9e4e4;
+  --quotationMarksTestimonialsColor: #fac3c3;
+  --contactIconsColor: #fcdfdf;
+  --secondColor: #ed3737;
+  --thirdColor:#571212;
+  --fourthColor:#971f1f;
+  --portfolioLinkColor:rgba(221, 20, 20, 0.75);
+  --portfolioLinkHoverColor:rgba(221, 20, 20, 0.95);
+  --backToTheTopHover: #ec2e2e;
+}
+
+/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
@@ -14,12 +53,12 @@ body {
 }
 
 a {
-  color: #149ddd;
+  color: var(--generalColor);
   text-decoration: none;
 }
 
 a:hover {
-  color: #37b3ed;
+  color: var(--secondColor);
   text-decoration: none;
 }
 
@@ -42,7 +81,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
+  background: var(--generalColor);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -56,7 +95,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2eafec;
+  background: var(--backToTheTopHover);
   color: #fff;
 }
 
@@ -121,7 +160,7 @@ h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #149ddd;
+  background: var(--generalColor);
   color: #fff;
   text-decoration: none;
 }
@@ -189,7 +228,7 @@ h6 {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-  color: #149ddd;
+  color: var(--generalColor);
 }
 
 /* Mobile Navigation */
@@ -202,7 +241,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: var(--generalColor);
   color: #fff;
   width: 40px;
   height: 40px;
@@ -228,7 +267,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/hero-bg_2.png") top center;
   background-size: cover;
 }
 
@@ -268,7 +307,7 @@ h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid var(--generalColor);
 }
 
 @media (min-width: 1024px) {
@@ -299,7 +338,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: var(--sectionsBackgroundColor);
 }
 
 .section-title {
@@ -312,7 +351,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: var(--titlesColor);
 }
 
 .section-title h2::after {
@@ -321,7 +360,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: var(--generalColor);
   bottom: 0;
   left: 0;
 }
@@ -336,7 +375,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: var(--titlesColor);
 }
 
 .about .content ul {
@@ -357,7 +396,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: var(--generalColor);
   line-height: 0;
 }
 
@@ -380,7 +419,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #149ddd;
+  color: var(--generalColor);
   float: left;
   line-height: 0;
 }
@@ -399,25 +438,25 @@ section {
   margin: 0 0 0 60px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  color: #122f57;
+  color: var(--thirdColor);
 }
 
 .facts .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: #122f57;
+  color: var(--thirdColor);
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
 .facts .count-box a:hover {
-  color: #1f5297;
+  color: var(--fourthColor);
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -442,7 +481,7 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #dce8f8;
+  background: var(--progressBarColor);
   height: 10px;
 }
 
@@ -450,7 +489,29 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #149ddd;
+  background-color: var(--generalColor);
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.skills ul strong {
+  margin-right: 10px;
+}
+
+.skills ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: var(--generalColor);
+  line-height: 0;
 }
 
 /*--------------------------------------------------------------
@@ -467,7 +528,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid var(--fourthColor);
   position: relative;
 }
 
@@ -483,7 +544,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: var(--backgroundYearsColor);
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -511,7 +572,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid var(--fourthColor);
 }
 
 /*--------------------------------------------------------------
@@ -546,7 +607,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: var(--generalColor);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -589,17 +650,17 @@ section {
   color: #fff;
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.75);
+  background: var(--portfolioLinkColor);
   transition: 0.3s;
   width: 50%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: var(--portfolioLinkHoverColor);
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid var(--secondColor);
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -636,11 +697,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid var(--generalColor);
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: var(--generalColor);
 }
 
 .portfolio-details .portfolio-info {
@@ -694,10 +755,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: var(--generalColor);
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
+  border: 1px solid var(--generalColor);
 }
 
 .services .icon i {
@@ -711,7 +772,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #149ddd;
+  color: var(--generalColor);
 }
 
 .services .title {
@@ -726,7 +787,7 @@ section {
 }
 
 .services .title a:hover {
-  color: #149ddd;
+  color: var(--generalColor);
 }
 
 .services .description {
@@ -770,7 +831,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #c3e8fa;
+  color: var(--quotationMarksTestimonialsColor);
   font-size: 26px;
 }
 
@@ -820,11 +881,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid var(--generalColor);
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: var(--generalColor);
 }
 
 /*--------------------------------------------------------------
@@ -843,11 +904,11 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: var(--generalColor);
   float: left;
   width: 44px;
   height: 44px;
-  background: #dff3fc;
+  background: var(--contactIconsColor);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -867,7 +928,7 @@ section {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: var(--titlesColor);
 }
 
 .contact .info .email p {
@@ -894,14 +955,14 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: var(--generalColor);
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
+  background: var(--generalColor);
   color: #fff;
 }
 
@@ -990,7 +1051,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #149ddd;
+  background: var(--generalColor);
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -999,7 +1060,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #37b3ed;
+  background: var(--secondColor);
 }
 
 @-webkit-keyframes animate-loading {
