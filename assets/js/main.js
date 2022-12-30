@@ -4,6 +4,28 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+function myAge(){
+  let date = new Date()
+  let age = 0;
+
+  let day = date.getDate()
+  let month = date.getMonth() + 1
+  let year = date.getFullYear()
+
+  if(day >= 30 && month == 12){
+    age = year - 1999
+    // console.log('Hola' + age);
+    document.getElementById('age').innerHTML = age;
+    
+  } 
+  else{
+    age = year - 1999 - 1
+    // console.log('Hola2' + age);
+    document.getElementById('age').innerHTML = age;
+  }
+}
+
 (function() {
   "use strict";
 
